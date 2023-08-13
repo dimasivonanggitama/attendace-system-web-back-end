@@ -53,7 +53,9 @@ index.js (paling luar) -> routes -> controllers -> models
 &emsp;BE-IXRO = index.js of routes\
 &emsp;BE-ROUT = App Routes
 &emsp;BE-INWE = Input With Error\
-&emsp;BE-LOGI = Login Form
+&emsp;BE-LOGI = Login Form\
+&emsp;BE-RORO = Routes of Role
+
 
 • Controllers:\
 &emsp;BE-IXCO = index.js of controllers\
