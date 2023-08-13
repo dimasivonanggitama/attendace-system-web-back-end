@@ -13,7 +13,7 @@ const { roleRoutes } = require("./routes");
 
 app.use(express.json());
 
-app.use("/api/admin", roleRoutes);
+app.use("/api/admin/role", roleRoutes);
 
 app.listen(port, function () {
   console.log(`server is running on localhost ${port}`)
