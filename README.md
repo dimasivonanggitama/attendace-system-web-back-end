@@ -8,6 +8,7 @@
 4. cd backend
 5. npm init --y
 6. new-Item .env
+7. npm install express --save
 7. npm install --save-dev sequelize-cli
 8. npm install sequelize
 9. npm install mysql2
