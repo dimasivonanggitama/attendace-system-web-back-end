@@ -8,7 +8,12 @@ const db = require("./models");
 const express = require("express");
 const app = express();
 
+// const { home } = require("./");
+const { roleRoutes } = require("./routes");
+
 app.use(express.json());
+
+app.use("/api/admin", roleRoutes);
 
 app.listen(port, function () {
   console.log(`server is running on localhost ${port}`)
