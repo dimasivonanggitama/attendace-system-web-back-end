@@ -9,28 +9,28 @@
 5. npm init --y
 6. new-Item .env
 7. npm install express --save
-7. npm install --save-dev sequelize-cli
-8. npm install sequelize
-9. npm install mysql2
-10. npx sequelize-cli init
-11. npm install dotenv
-12. npm install bcrypt
-13. npm install jsonwebtoken
-14. npm install nodemailer
-15. mkdir src
-16. cd src
-17. npx sequelize-cli init
-18. cd ../
-19. git init
-20. [.gitignore] Added .env
-21. [.gitignore] Added node_modules
-22. git add .
-23. git commit -m "BE-PREP-v1 Initial commit of backend/server side"
-23. [Github website] Create new repository on Github Website (without any options): attendace-system-web-back-end
-24. git remote add origin https://github.com/dimasivonanggitama/attendance-system-web-back-end.git
-25. git push origin master
-26. git checkout -b development
-27. cd src
+8. npm install --save-dev sequelize-cli
+9. npm install sequelize
+10. npm install mysql2
+11. npx sequelize-cli init
+12. npm install dotenv
+13. npm install bcrypt
+14. npm install jsonwebtoken
+15. npm install nodemailer
+16. mkdir src
+17. cd src
+18. npx sequelize-cli init
+19. cd ../
+20. git init
+21. [.gitignore] Added .env
+22. [.gitignore] Added node_modules
+23. git add .
+24. git commit -m "BE-PREP-v1 Initial commit of backend/server side"
+25. [Github website] Create new repository on Github Website (without any options): attendace-system-web-back-end
+26. git remote add origin https://github.com/dimasivonanggitama/attendance-system-web-back-end.git
+27. git push origin master
+28. git checkout -b development
+29. cd src
 
 • ORM: Sequelize
 1. Create migration file
