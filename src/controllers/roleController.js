@@ -12,7 +12,7 @@ const RoleController = {
             }, { transaction: t });
 
             return res.status(200).json({
-                message: `Role ${roleName} berhasil ditambahkan.`
+                message: `Peran ${roleName} berhasil ditambahkan.`
             })
         } catch (err) {
             return res.status(503).json({
@@ -21,6 +21,21 @@ const RoleController = {
             });
         }
     },
+    fetch: async (req, res) => {
+        try {
+            const result = await role.findAll();
+
+            return res.status(200).json({
+                data: result,
+                message: `Seluruh data peran berhasil diambil.`
+            })
+        } catch (err) {
+            return res.status(503).json({
+                message: 'Mohon maaf, layanan tidak tersedia saat ini. Silakan coba lagi nanti.',
+                error: err.message
+            });
+        }
+    }
 }
 
 module.exports = RoleController;
