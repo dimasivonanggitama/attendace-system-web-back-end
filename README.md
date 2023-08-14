@@ -56,10 +56,9 @@ index.js (paling luar) -> routes -> controllers -> models
 &emsp;BE-ROUT = App Routes\
 &emsp;BE-RORO = Role of Routes
 
-
 • Controllers:\
 &emsp;BE-IXCO = index.js of controllers\
-&emsp;BE-ROCO = Role controllers
+&emsp;BE-ROCO = Role controller
 
 • Models:\
 &emsp;BE-IXMO = index.js of models\
