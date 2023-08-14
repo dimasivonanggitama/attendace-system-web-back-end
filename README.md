@@ -18,20 +18,20 @@
 14. npm install jsonwebtoken
 15. npm install nodemailer
 16. npm install cors
-16. mkdir src
-17. cd src
-18. npx sequelize-cli init
-19. cd ../
-20. git init
-21. [.gitignore] Added .env
-22. [.gitignore] Added node_modules
-23. git add .
-24. git commit -m "BE-PREP-v1 Initial commit of backend/server side"
-25. [Github website] Create new repository on Github Website (without any options): attendace-system-web-back-end
-26. git remote add origin https://github.com/dimasivonanggitama/attendance-system-web-back-end.git
-27. git push origin master
-28. git checkout -b development
-29. cd src
+17. mkdir src
+18. cd src
+19. npx sequelize-cli init
+20. cd ../
+21. git init
+22. [.gitignore] Added .env
+23. [.gitignore] Added node_modules
+24. git add .
+25. git commit -m "BE-PREP-v1 Initial commit of backend/server side"
+26. [Github website] Create new repository on Github Website (without any options): attendace-system-web-back-end
+27. git remote add origin https://github.com/dimasivonanggitama/attendance-system-web-back-end.git
+28. git push origin master
+29. git checkout -b development
+30. cd src
 
 • ORM: Sequelize
 1. Create migration file
