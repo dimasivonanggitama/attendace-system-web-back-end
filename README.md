@@ -62,6 +62,7 @@ index.js (paling luar) -> routes -> controllers -> models
 
 • Models:\
 &emsp;BE-IXMO = index.js of models\
+&emsp;BE-ROMO = Role model
 
 • Migrations:\
 &emsp;BE-MIGR = Migrations of Role table\
