@@ -17,6 +17,7 @@
 13. npm install bcrypt
 14. npm install jsonwebtoken
 15. npm install nodemailer
+16. npm install cors
 16. mkdir src
 17. cd src
 18. npx sequelize-cli init
