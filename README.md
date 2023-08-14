@@ -48,7 +48,8 @@ index.js (paling luar) -> routes -> controllers -> models
 ## Version code:
 • Preparation:\
 &emsp;BE-PREP = Preparation\
-&emsp;BE-IXSR = index.js of src (main backend/outer than any index.js)
+&emsp;BE-IXSR = index.js of src (main backend/outer than any index.js)\
+&emsp;BE-DABA = Database: attendance_system_db.sql
 
 • Routes:\
 &emsp;BE-IXRO = index.js of routes\
