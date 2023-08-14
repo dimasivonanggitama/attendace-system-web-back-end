@@ -3,20 +3,20 @@ const role = db.Role;
 
 const RoleController = {
     create: async (req, res) => {
+        const { roleName } = req.body;
         try {
-            const { roleName } = req.body;
             await db.sequelize.transaction(async (t) => {
-                const result = await role.create({
+                await role.create({
                     role_name: roleName
-                })
-            }, { transaction: t });
+                }, { transaction: t });
+            });
 
             return res.status(200).json({
                 message: `Peran ${roleName} berhasil ditambahkan.`
-            })
+            });
         } catch (err) {
             return res.status(503).json({
-                message: 'Mohon maaf, layanan tidak tersedia saat ini. Silakan coba lagi nanti.',
+                message: 'Mohon maaf, sedang dilakukan pemeliharaan layanan saat ini. Silakan coba lagi nanti.',
                 error: err.message
             });
         }
@@ -27,7 +27,7 @@ const RoleController = {
             return res.status(200).send(result);
         } catch (err) {
             return res.status(503).json({
-                message: 'Mohon maaf, layanan tidak tersedia saat ini. Silakan coba lagi nanti.',
+                message: 'Mohon maaf, sedang dilakukan pemeliharaan layanan saat ini. Silakan coba lagi nanti.',
                 error: err.message
             });
         }
