@@ -21,6 +21,25 @@ const RoleController = {
             });
         }
     },
+    edit: async (req, res) => {
+        const { roleIDEdit, roleNameEdit } = req.body;
+        try {
+            await role.update({ role_name: roleNameEdit }, {
+                where: {
+                    role_id: roleIDEdit
+                }
+            });
+                
+            return res.status(200).json({
+                message: `Peran ${roleNameEdit} berhasil diubah.`
+            });
+        } catch (err) {
+            return res.status(503).json({
+                message: 'Mohon maaf, sedang dilakukan pemeliharaan layanan saat ini. Silakan coba lagi nanti.',
+                error: err.message
+            });
+        }
+    },
     fetch: async (req, res) => {
         try {
             const result = await role.findAll();
