@@ -1,5 +1,5 @@
 const roleRoutes = require("./role");
-const roleRoutes = require("./user");
+const userRoutes = require("./user");
 
 module.exports = {
     roleRoutes,
