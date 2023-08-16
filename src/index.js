@@ -10,7 +10,7 @@ const cors = require("cors");
 const app = express();
 
 // const { home } = require("./");
-const { roleRoutes } = require("./routes");
+const { roleRoutes, userRoutes } = require("./routes");
 
 app.use(cors());
 app.use(express.json());
