@@ -17,6 +17,7 @@
 13. npm install bcrypt
 14. npm install jsonwebtoken
 15. npm install nodemailer
+16. npm install handlebars
 16. npm install cors
 17. mkdir src
 18. cd src

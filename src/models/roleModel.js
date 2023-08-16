@@ -1,4 +1,4 @@
-module.exports = (sequelize, Sequelize) => {
+  module.exports = (sequelize, Sequelize) => {
     const Role = sequelize.define("Role", {
         role_id: {
           allowNull: false,
@@ -16,8 +16,8 @@ module.exports = (sequelize, Sequelize) => {
         updatedAt: false
     });
 
-    // User.associate = models => {
-    //     User.hasMany(models.Blog, {foreignKey: "user_id"});
+    // Role.associate = models => {
+    //   Role.belongsTo(models.Blog, {foreignKey: "user_id"});
     // }
 
     return Role;

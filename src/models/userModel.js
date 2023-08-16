@@ -1,4 +1,6 @@
-module.exports = (sequelize, Sequelize) => {
+const Role = require('./roleModel');
+
+  module.exports = (sequelize, Sequelize) => {
     const User = sequelize.define("User", {
         user_id: {
           allowNull: false,
@@ -11,7 +13,6 @@ module.exports = (sequelize, Sequelize) => {
           type: Sequelize.STRING
         },
         password: {
-          allowNull: false,
           type: Sequelize.STRING
         },
         fullname: {
@@ -19,13 +20,14 @@ module.exports = (sequelize, Sequelize) => {
           type: Sequelize.STRING
         },
         birthday: {
-          allowNull: false,
           type: Sequelize.DATE
         },
         verified: {
-          type: Sequelize.BOOLEAN
+          type: Sequelize.BOOLEAN,
+          defaultValue: false
         },
         role_id: {
+          allowNull: false,
           type: Sequelize.INTEGER
         }
     }, {
@@ -34,9 +36,10 @@ module.exports = (sequelize, Sequelize) => {
         updatedAt: false
     });
 
-    User.associate = models => {
-        User.hasOne(models.Role, {foreignKey: "role_id"});
-    }
+    // User.associate = models => {
+    //     Role.hasOne(User);
+    //     User.belongsTo(Role, {foreignKey: "role_id"});
+    // }
 
     return User;
 }
