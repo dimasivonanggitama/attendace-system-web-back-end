@@ -16,6 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/admin/role", roleRoutes);
+app.use("/api/admin/user", userRoutes);
 
 app.listen(port, function () {
   console.log(`server is running on localhost ${port}`)
