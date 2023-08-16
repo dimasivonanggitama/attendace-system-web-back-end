@@ -3,6 +3,6 @@ const router = require("express").Router();
 
 router.get("/", roleController.fetch);
 router.post("/create", roleController.create);
-router.patch("/update", roleController.edit);
+router.patch("/update", roleController.update);
 
 module.exports = router;
