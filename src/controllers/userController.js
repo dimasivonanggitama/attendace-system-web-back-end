@@ -14,5 +14,5 @@ const UserController = {
         }
     },
 }
-
+// user.sync({alter: true})
 module.exports = UserController;
