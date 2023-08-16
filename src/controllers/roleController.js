@@ -21,6 +21,26 @@ const RoleController = {
             });
         }
     },
+    delete: async (req, res) => {
+        const { roleIDDelete } = req.body;
+        console.log(roleIDDelete);
+        try {
+            await role.destroy({
+                where: {
+                    role_id: roleIDDelete
+                }
+            });
+                
+            return res.status(200).json({
+                message: `Peran ${roleIDDelete} berhasil dihapus.`
+            });
+        } catch (err) {
+            return res.status(503).json({
+                message: 'Mohon maaf, sedang dilakukan pemeliharaan layanan saat ini. Silakan coba lagi nanti.',
+                error: err.message
+            });
+        }
+    },
     fetch: async (req, res) => {
         try {
             const result = await role.findAll();
